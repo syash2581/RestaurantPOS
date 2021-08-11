@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restaurantpos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/home_3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestaurantPOS">
+        <activity android:name=".CompletedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddCategoryItem"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CategoryItemInput"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditOrder"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Payment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewOrder"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EmployeeHome"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditBlock"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CategoryInput"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminHome"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminMpin"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.RestaurantPOSNoAc"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.RestaurantPOSNoAc" />
+    </application>
+
+</manifest>

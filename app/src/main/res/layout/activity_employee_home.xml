@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeHome"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            android:gravity="start"
+            android:textStyle="italic|bold"
+            android:textSize="25sp"
+            android:layout_weight="100"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnNewOrder"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:gravity="start"/>
+
+
+        <Button
+            android:id="@+id/btnCompletedOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_baseline_remove_shopping_cart_24"
+            android:textSize="20sp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="Closed"
+            android:gravity="start"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+
+</LinearLayout>

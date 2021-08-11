@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHome"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Menu"/>
+
+        <com.google.android.material.tabs.TabItem
+
+            android:id="@+id/tiBlocks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Blocks"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Staff"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        android:id="@+id/MyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
